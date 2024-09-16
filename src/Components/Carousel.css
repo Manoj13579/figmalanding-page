@@ -1,0 +1,38 @@
+/* arrow */
+.slick-prev {
+    left: 10px;
+    top: 50%;
+    z-index: 1;
+  }
+  
+  .slick-next {
+    right: 10px;
+    top: 50%;
+    z-index: 1;
+  }
+ 
+  /* remove default background color if necessary. here needed coz of white background */
+  .slick-prev::before,
+  .slick-next::before {
+    color: black; /* Hide default icon color */
+  }
+  
+  /* dots */
+  .slick-dots {
+    bottom: 10px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: gray;
+    opacity: 0.5;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #0a9164; /* Change active dot color */
+    opacity: 1;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px; /* Increase spacing between dots */
+  }
